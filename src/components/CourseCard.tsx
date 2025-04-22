@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 import { DivideIcon as LucideIcon } from 'lucide-react';
 
 export interface CourseCategory {
-  icon: LucideIcon;
+  icon: typeof LucideIcon;
   title: string;
+  fee: string;
   color: string;
   count?: string;
   description?: string;

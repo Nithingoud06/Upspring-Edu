@@ -40,15 +40,14 @@ function App() {
   }, []);
 
   const courseCategories = [
-  
-    { icon: Globe, title: 'Website Design', color: 'bg-green-500' },
-    { icon: Terminal, title: 'Fornt End (React)', color: 'bg-blue-500' },
-    { icon: Code, title: 'Back End (Java)', color: 'bg-red-500' },
-    { icon: Database, title: 'Java Full Stack', count: '30 Days', color: 'bg-purple-500' },
-    { icon: Briefcase, title: 'SAP Success Factors', color: 'bg-indigo-500' },
-    { icon: UserCheck, title: 'HR Operations', color: 'bg-blue-400' },
-    { icon: Users, title: 'HR Recruitment', color: 'bg-teal-500' },
-    { icon: Mic, title: 'Spoken English', color: 'bg-orange-400' },
+    { icon: Globe, title: 'Website Design', color: 'bg-green-500', fee: '200' },
+    { icon: Terminal, title: 'Front End (React)', color: 'bg-blue-500', fee: '300' },
+    { icon: Code, title: 'Back End (Java)', color: 'bg-red-500', fee: '400' },
+    { icon: Database, title: 'Java Full Stack', color: 'bg-purple-500', fee: '500' },
+    { icon: Briefcase, title: 'SAP Success Factors', color: 'bg-indigo-500', fee: '600' },
+    { icon: UserCheck, title: 'HR Operations', color: 'bg-blue-400', fee: '250' },
+    { icon: Users, title: 'HR Recruitment', color: 'bg-teal-500', fee: '550' },
+    { icon: Mic, title: 'Spoken English', color: 'bg-orange-400', fee: '150' },
   ];
 
   const handleCourseClick = (course: CourseCategory) => {
@@ -107,9 +106,9 @@ function App() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setShowContactForm(true)}
-              className="bg-purple-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-600 transition"
+              // className="bg-purple-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-600 transition"
             >
-              Nithin
+              
             </motion.button>
           </div>
         </div>
@@ -151,7 +150,7 @@ function App() {
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-transparent border-2 border-purple-400 text-purple-400 px-8 py-3 rounded-full font-semibold hover:bg-purple-400/10 transition"
+              // className="bg-transparent border-2 border-purple-400 text-purple-400 px-8 py-3 rounded-full font-semibold hover:bg-purple-400/10 transition"
             >
             
             </motion.button>
@@ -307,7 +306,7 @@ function App() {
                     <label className="block text-white mb-2">Course</label>
                     <select 
                       name="course"
-                      className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-purple-400"
+                      className="w-full px-4 py-2 rounded-lg  bg-balck/5 border border-white/10 text- blackfocus:outline-none focus:border-purple-400"
                     >
                       <option value="">Select a course</option>
                       {courseCategories.map((course) => (
