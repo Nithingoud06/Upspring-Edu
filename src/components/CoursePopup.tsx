@@ -145,7 +145,7 @@ const CoursePopup: React.FC<CoursePopupProps> = ({ course, isOpen, onClose }) =>
   const details = courseDetails[course.title] || {
     description: 'Comprehensive training program designed to help you master essential skills in this field.',
     duration: '8-12 Weeks',
-    fee: 'Varies by course',
+  
     features: ['Hands-on projects', 'Expert-led instruction', 'Industry-relevant curriculum', 'Career support'],
     prerequisites: ['Basic knowledge in the field', 'Dedication to learning']
   };
