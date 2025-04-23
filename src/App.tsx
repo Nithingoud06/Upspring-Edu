@@ -22,6 +22,7 @@ import {
   Linkedin,
   Twitter,
   CheckCircle,
+  InstagramIcon,
 } from 'lucide-react';
 import CourseCard, { CourseCategory } from './components/CourseCard';
 import CoursePopup from './components/CoursePopup';
@@ -56,23 +57,42 @@ function App() {
 
   const testimonials = [
     {
-      name: 'Nithya',
-      role: 'web Designer',
+      name: 'Ritika Sharma',
+      role: 'Java Full Stack Graduate',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80',
-      content: 'The web Designer program completely transformed my career. Now I work at a top tech company.',
+      content: '"UpspringEdu helped me land my first job as a Java Developer. The course content was industry-relevant, and the hands-on projects gave me the confidence to crack interviews."',
     },
     {
-      name: 'Rajesh',
-      role: 'Front End (React)',
+      name: 'Aman Verma',
+      role: 'HR Executive',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80',
-      content: 'The Front End (React) courses were exactly what I needed to transition into cloud architecture.',
+      content: '"The HR Recruitment course at UpspringEdu was a game changer. I learned practical techniques that I now use daily in my current role."',
     },
     {
-      name: 'Harika',
-      role: 'Back End (Java)',
+      name: 'Sneha Patil',
+      role: 'Spoken English Learner',
       image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80',
-      content: "Thanks to UpspringEdu's DevOps course, I mastered modern deployment practices and doubled my salary.",
+      content: "I joined the Spoken English program to improve my communication, and within weeks, I could feel the difference. Highly recommended for anyone looking to boost confidence!",
     },
+    {
+      name: 'Kunal Raj',
+      role: ' Frontend Developer Intern',
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80',
+      content: " Learning Frontend Development with React was seamless and fun! The mentor support and real-world projects were top-notch.",
+    },
+     {
+      name: 'Megha Sinha',
+      role: 'SAP Consultant Trainee',
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80',
+      content:"The SAP SuccessFactors training was spot-on for my career switch. The trainers made complex topics easy to understand, and I got certified in just a few months."
+    },
+    {
+      name: 'Ravi Chauhan',
+      role: 'Freelance Web Designer',
+      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80',
+      content:"Website Design using WordPress and React gave me the tools to start freelancing right after completing the course. Loved the project-based approach."
+    },
+  
   ];
 
   const stats = [
@@ -93,7 +113,8 @@ function App() {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center space-x-2"
           >
-            <GraduationCap className="h-8 w-8 text-purple-400" />
+            <GraduationCap className="h-8 w-8 text-white" />
+
             <span className="text-2xl font-bold text-white">UpspringEdu</span>
           </motion.div>
             <div className="hidden md:flex space-x-8">
@@ -347,36 +368,36 @@ function App() {
                 <li><a href="#contact" className="hover:text-purple-400">Contact</a></li>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h4 className="text-white font-semibold mb-4">Legal</h4>
               <ul className="space-y-2 text-white/70">
                 <li><a href="#" className="hover:text-purple-400">Privacy Policy</a></li>
                 <li><a href="#" className="hover:text-purple-400">Terms of Service</a></li>
                 <li><a href="#" className="hover:text-purple-400">Cookie Policy</a></li>
               </ul>
-            </div>
+            </div> */}
             <div>
               <h4 className="text-white font-semibold mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-white/70 hover:text-purple-400">
-                  <Github className="h-6 w-6" />
+                <a href="https://www.instagram.com/upspringedu?igsh=MWM0cTVqN2R3cjU3" className="text-white/70 hover:text-purple-400">
+                  <InstagramIcon className="h-6 w-6" /> 
                 </a>
-                <a href="#" className="text-white/70 hover:text-purple-400">
+                <a href="https://www.linkedin.com/company/upspringedu/posts/?feedView=all" className="text-white/70 hover:text-purple-400">
                   <Linkedin className="h-6 w-6" />
-                </a>
+                {/* </a>
                 <a href="#" className="text-white/70 hover:text-purple-400">
-                  <Twitter className="h-6 w-6" />
+                  <Twitter className="h-6 w-6" /> */}
                 </a>
               </div>
             </div>
           </div>
           <div className="text-center text-white/50 mt-12">
-            © 2025 UpspringEdu. All rights reserved.
+            © 2024 UpspringEdu. All rights reserved.
           </div>
         </footer>
       </main>
 
-      {/* Welcome Popup Dialog */}
+      {/* Welcome Popup Dialog
       <AnimatePresence>
         {showPopup && (
           <motion.div
@@ -419,7 +440,7 @@ function App() {
             </motion.div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
 
       {/* Course Details Popup */}
       <AnimatePresence>
