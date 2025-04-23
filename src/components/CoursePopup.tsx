@@ -201,7 +201,7 @@ const CoursePopup: React.FC<CoursePopupProps> = ({ course, isOpen, onClose }) =>
 
         
   <div className="flex items-center mb-4">
-    <span className="text-purple-400 font-semibold mr-2">Rakesh</span>
+    <span className="text-purple-400 font-semibold mr-2">Fee</span>
     <span className="text-white">{details.fee}</span>
   </div>
 
