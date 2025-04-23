@@ -26,6 +26,7 @@ import {
 } from 'lucide-react';
 import CourseCard, { CourseCategory } from './components/CourseCard';
 import CoursePopup from './components/CoursePopup';
+// import { image } from 'framer-motion/client';
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
@@ -59,47 +60,46 @@ function App() {
     {
       name: 'Ritika Sharma',
       role: 'Java Full Stack Graduate',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80',
       content: '"UpspringEdu helped me land my first job as a Java Developer. The course content was industry-relevant, and the hands-on projects gave me the confidence to crack interviews."',
     },
     {
       name: 'Aman Verma',
       role: 'HR Executive',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80',
+      
       content: '"The HR Recruitment course at UpspringEdu was a game changer. I learned practical techniques that I now use daily in my current role."',
     },
     {
       name: 'Sneha Patil',
       role: 'Spoken English Learner',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80',
+      
       content: "I joined the Spoken English program to improve my communication, and within weeks, I could feel the difference. Highly recommended for anyone looking to boost confidence!",
     },
     {
       name: 'Kunal Raj',
       role: ' Frontend Developer Intern',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80',
+    
       content: " Learning Frontend Development with React was seamless and fun! The mentor support and real-world projects were top-notch.",
     },
      {
       name: 'Megha Sinha',
       role: 'SAP Consultant Trainee',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80',
+      
       content:"The SAP SuccessFactors training was spot-on for my career switch. The trainers made complex topics easy to understand, and I got certified in just a few months."
     },
     {
       name: 'Ravi Chauhan',
       role: 'Freelance Web Designer',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80',
+    
       content:"Website Design using WordPress and React gave me the tools to start freelancing right after completing the course. Loved the project-based approach."
     },
   
   ];
 
   const stats = [
-    { label: 'Active Students', value: '50,000+' },
-    { label: 'Expert Instructors', value: '300+' },
-    { label: 'Course Completion Rate', value: '94%' },
-    { label: 'Career Transitions', value: '25,000+' },
+    { label: 'Active Students', value: '200+' },
+    { label: 'trainers', value: '20+' },
+    { label: 'Course Completion Rate', value: '98%' },
+    { label: 'Career Transitions', value: '100+' },
   ];
 
   return (
@@ -258,7 +258,7 @@ function App() {
                 className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10"
               >
                 <div className="flex items-center mb-4">
-                  <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full mr-4" />
+                  {/* <img src={testimonial.image} alt={testimonial.name} className="w-12 h-12 rounded-full mr-4" /> */}
                   <div>
                     <h4 className="text-white font-semibold">{testimonial.name}</h4>
                     <p className="text-purple-400 text-sm">{testimonial.role}</p>
